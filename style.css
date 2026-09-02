@@ -9,16 +9,20 @@
   border: 1px solid black;
   font-family: "Inter", sans-serif;
 }
+.page > * {
+  padding: 0 0.5rem;
+}
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-top: 1rem;
+  margin-bottom: 2.75rem;
 }
 .logo-header {
   filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(0%)
     hue-rotate(136deg) brightness(99%) contrast(100%);
-  width: 0.7rem;
+  width: 0.6rem;
 }
 .nav-header {
   display: flex;
@@ -27,18 +31,64 @@ header {
 }
 .nav-header > a {
   text-decoration: none;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   color: black;
 }
 .nav-header > button {
   border-radius: 15px;
   padding: 0.1rem 0.8rem;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   background-color: #3e63dd;
   color: white;
 }
+h1.title {
+  font-size: 1.9rem;
+  margin-bottom: 20px;
+}
+h1 span#title {
+  display: block;
+  color: #3e63dd;
+}
+.hero p {
+  font-size: 1rem;
+  text-align: justify;
+}
+p span#description-title {
+  font-weight: bold;
+  color: #1c2024;
+}
+.img-wrapper {
+  margin-top: 2.75rem;
+  margin-bottom: 2.75rem;
+}
 .img-wrapper > img {
   width: 100%;
+}
+h2.sub-title {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 1.4rem;
+}
+p.description-sub-title {
+  font-size: 1rem;
+  text-align: justify;
+}
+.first-content > button {
+  border-radius: 15px;
+  margin-top: 1rem;
+  margin-bottom: 1.75rem;
+  padding: 0.1rem 0.8rem;
+  background-color: #3e63dd;
+  color: white;
+}
+.second-content {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  row-gap: 0.5rem;
+}
+.second-content > img {
+  width: 50%;
 }
 
 @media screen and (min-width: 768px) {
